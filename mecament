@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Company — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">YourCompany</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">Company</a>
+        <a href="#industries">Industries</a>
+        <a href="#services">Services</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>We build reliable engineering solutions</h1>
+      <p>Engineering • Procurement • Construction — End-to-end projects across industries.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#services">Our Services</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="clients container">
+    <h2 class="section-title">Our Prestigious Clients</h2>
+    <div class="clients-grid" aria-hidden="false">
+      <!-- Replace `logo-placeholder.svg` with real client logos -->
+      <img src="https://via.placeholder.com/140x60?text=Client+1" alt="Client 1">
+      <img src="https://via.placeholder.com/140x60?text=Client+2" alt="Client 2">
+      <img src="https://via.placeholder.com/140x60?text=Client+3" alt="Client 3">
+      <img src="https://via.placeholder.com/140x60?text=Client+4" alt="Client 4">
+      <img src="https://via.placeholder.com/140x60?text=Client+5" alt="Client 5">
+      <img src="https://via.placeholder.com/140x60?text=Client+6" alt="Client 6">
+    </div>
+  </section>
+
+  <section id="services" class="services container">
+    <h2 class="section-title">Services we provide</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Civil & Structural</h3>
+        <p>Foundations, structural buildings, piling, land development — industrial & commercial projects.</p>
+        <a class="card-link" href="#">Learn more →</a>
+      </article>
+
+      <article class="card">
+        <h3>Mechanical</h3>
+        <p>Static & rotary equipment, heat exchangers, tankages, piping and equipment installation.</p>
+        <a class="card-link" href="#">Learn more →</a>
+      </article>
+
+      <article class="card">
+        <h3>Electrical & Automation</h3>
+        <p>HT/LT switchgear, substations, control & instrumentation, electrification solutions.</p>
+        <a class="card-link" href="#">Learn more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="stats container">
+    <div class="stat">
+      <div class="big" data-target="25">0</div>
+      <div class="label">Years of existence</div>
+    </div>
+    <div class="stat">
+      <div class="big" data-target="120">0</div>
+      <div class="label">Satisfied clients</div>
+    </div>
+    <div class="stat">
+      <div class="big" data-target="15">0</div>
+      <div class="label">States</div>
+    </div>
+    <div class="stat">
+      <div class="big" data-target="300">0</div>
+      <div class="label">Projects</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2 class="section-title">Get in touch</h2>
+    <p>Send a message and we’ll respond within 24 hours.</p>
+
+    <form class="contact-form" onsubmit="handleForm(event)">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <textarea name="message" placeholder="Message" rows="5" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>YourCompany Pvt Ltd</strong>
+        <div>Registered office • 123 Street, City</div>
+        <div>Tel: +91 11 1234 5678 • Email: info@example.com</div>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-nav">
+          <a href="#">Privacy</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Careers</a>
+        </nav>
+        <div class="copyright">© <span id="year"></span> YourCompany. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
